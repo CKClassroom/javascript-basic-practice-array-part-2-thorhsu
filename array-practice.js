@@ -20,7 +20,7 @@ console.log(Math.max(...randomArr));
 
 // 4. 計算全部數值的合計數
 console.log("4. ---------------------------");
-console.log(randomArr.reduce((accmulator, currentVal) => accmulator + currentVal));
+console.log(randomArr.reduce((accmulator = 0, currentVal) => accmulator + currentVal));
 
 // 5. 找出最小值
 console.log("5. ---------------------------");
