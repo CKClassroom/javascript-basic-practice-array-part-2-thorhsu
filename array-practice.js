@@ -4,10 +4,11 @@
 
 // 1. 建立一個長度 50，數值介於 40~100 的陣列 (亂數產生) (Array)
 console.log("1. ---------------------------");
-let randomArr = [];
-for(let i = 0; i < 50 ; i++){
-    randomArr.push(Math.floor(Math.random() * 61) + 40);
+let randomSet = new Set();
+while(randomSet.size < 50){
+    randomSet.add(Math.floor(Math.random() * 61) + 40);
 }
+let randomArr = [...randomSet];
 console.log(randomArr.length, randomArr);
 
 // 2. 篩選出大於 60 的結果
